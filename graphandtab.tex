@@ -279,9 +279,7 @@ This is a sample of longtable with itemize environment. Spacing between environm
 
 \end{longtable}
 \end{lstlisting}
-%-----------------------------------------------------------------------------------
 % 	[[REAL CODE]]
-%----------------------------------------------------------------------------------
 \begin{longtable}{p{.5\textwidth} p{.5\textwidth}}
 	\caption{Longtable sample 1} \\
 	\label{tab:label} \\
@@ -289,5 +287,21 @@ This is a sample of longtable with itemize environment. Spacing between environm
 
 \end{longtable}
 
-\end{document}
+\section{Semicolon Table Sample}
+\begin{lstlisting}
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}l@{}}
+    Hari &  \hariBerita\\
+    Tanggal & \DTMusedate{tanggalberita} \\
+    Waktu & \DTMusetime{waktuberita}\\
+    Tempat & \yourPlace\\
+\end{tabular}
+\end{lstlisting}
+% 	[[REAL CODE]]
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}l@{}}
+    Lorem &  Ipsum\\
+    Lorem &  Ipsum\\
+    Lorem &  Ipsum\\
+\end{tabular}
 
+
+\end{document}
