@@ -22,10 +22,13 @@
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 \usepackage{subfiles}
+\usepackage{comment}
 %----------------------------------------------------------------------------------------
 % CONFIGURATION OF Tikz
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
+
+\def\checkmark{\tikz\fill[scale=0.5](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 
 % Configuration of Tikz FlowChart
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
@@ -45,11 +48,12 @@
 
 \usepackage{tabularx}
 \usepackage{booktabs} % Required for better horizontal rules in tables
-%\usepackage{multirow}
+\usepackage{multirow}
 
 \usepackage{paralist} %Inline list(inparaenum), always on top of enumitem
 \usepackage{longtable} % Enable table cross multiple page
 \usepackage{array} %Mostly formatting columns and spacing
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} %centering elemen in table
 \usepackage{enumitem} % Required for list customisation
 
 \setlist{noitemsep} % No spacing between list items
@@ -79,10 +83,12 @@
 
 \begin{document}
 
-\subfile{subfiles/flowchart1.tex}
-\clearpage
-\subfile{subfiles/flowchart2.tex}
+%\subfile{subfiles/flowchart1.tex}
+%\clearpage
+%\subfile{subfiles/flowchart2.tex}
+%\clearpage
+\subfile{subfiles/flowchart3.tex}
 \clearpage
 \subfile{subfiles/longtable.tex}
-\subfile{subfiles/piechart.tex}
+%\subfile{subfiles/piechart.tex}
 \end{document}

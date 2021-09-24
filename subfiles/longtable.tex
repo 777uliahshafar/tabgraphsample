@@ -1,15 +1,83 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../graphandtab.tex]{subfiles}
 
 
 \begin{document}
 
 
-\begin{longtable}{p{.5\textwidth} p{.5\textwidth}}
-	\caption{Longtable sample 1} \\
-	\label{tab:label} \\
-	text & \multicolumn{1}{i{.4\textwidth}}{\item text \item text}\\
+
+\begin{longtable}{ p{.50\textwidth}  P{.25\textwidth} P{.25\textwidth}  }
+	\caption{Proposisi Penelitian} \\
+	\label{tab:props} \\
+\toprule
+ {\bfseries Elemen yang disukai}  & {\bfseries Ruang A} & {\bfseries Ruang B} \\
+ \midrule
+ Laut & \checkmark & \checkmark \\
+ Pohon/ tanaman & \checkmark & \checkmark \\
+ Kedai makanan & \checkmark & \checkmark \\
+ Toilet & & \checkmark \\
+ Perumahan & & \checkmark\\
+ Pelabuhan &\checkmark &\\
+ Tempat duduk &\checkmark &\checkmark\\
+ Tempat berkumpul & &\checkmark\\
+ Lampu &\checkmark &\checkmark\\
+ Paving blok &\checkmark &\checkmark\\
+ &&\\
+ Umur  & \multicolumn{2}{c}{Mempengaruhi}   \\
+ Jenis kelamin  & \multicolumn{2}{c}{Mempengaruhi}   \\
+ Suku  & \multicolumn{2}{c}{Mempengaruhi}   \\
+ Pekerjaan  & \multicolumn{2}{c}{Mempengaruhi}   \\
+
+ \bottomrule
+
 \end{longtable}
 
+
+\begin{comment}
+
+\begin{longtable}{l l l l p{.1\textwidth}}
+	\caption{Proposisi Penelitian} \\
+	\label{tab:props1} \\
+    \toprule
+        \multicolumn{2}{c}{Karakter Pengguna} & \multicolumn{2}{c}{Atribut} & Preferensi Ruang \\
+        \midrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Umur}}} & 18-44 &
+\multirow{7}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Aksesibilitas}}} & Kemudahan dikenali &  \\
+
+& 45-64 & & Pencapaian melalui jalan & \\
+& $\ge$ 65  & & Bebas hambatan & \\
+& & & Penggunaan yang nyaman & \\
+& & & Pengawasan & \\
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Gender}}} & Laki-laki & & Ketersediaan parkir & \\
+& Perempuan & & & \\
+
+&  &
+\multirow{6}{*}{\rotatebox[origin=b]{90}{\parbox[t]{2mm}{ Keselamatan \mbox{dan keamanan}}}} & Derajat ketertutupan & \\
+
+&  & & Keramaian & \\
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Ras}}} &  Bugis & & Gangguan fisik dan sosial & \\
+& Bukan bugis & & Privatisasi & \\
+&  & & Pencahayaan & \\
+& & &  &  \\
+
+\multirow{7}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Status \mbox{pekerjaan}}}} & Karyawan &
+\multirow{6}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Estetika}}} & Derajat ketertutupan & \multirow{3}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{\mbox{Ruang A / Ruang B }}}} \\
+
+& Wiraswasta  & & Susunan (order) &  \\
+& Tidak bekerja& & Pola material & \\
+& Pelajar & & Kualitas dan tatanan furnitur & \\
+& Pensiun & & Pemeliharaan & \\
+& & &  & \\
+
+& &
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\parbox[t]{2mm}{Daya hidup }}} & Memberi rasa nyaman & \\
+
+& & & Memberi relaksasi & \\
+& & & Mendukung interaksi sosial & \\
+& & & Mendukung privasi & \\
+& & & Keragaman penggunaan & \\
+
+\bottomrule
+\end{longtable}
 
 
 \begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}l@{}}
@@ -18,7 +86,15 @@
     Lorem &  Ipsum\\
 \end{tabular}
 
+
+\begin{longtable}{p{.5\textwidth} p{.5\textwidth}}
+	\caption{Longtable sample 1} \\
+	\label{tab:label} \\
+	text & \multicolumn{1}{i{.4\textwidth}}{\item text \item text}\\
+\end{longtable}
 %// @{} :  Remove space before column that makes it indent the table.
+
+\end{comment}
 
 %\onlyinsubfile{\biblio}
 \end{document}

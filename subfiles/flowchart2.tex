@@ -1,6 +1,65 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+	\node (fit) [startstop, text width= 6cm] {\textbf{Elemen Ruang Publik}\\\small(Aksesibilitas, Estetika, Keamanan dan Fasilitas)};
+
+	\node (pre) [startstop, right of=fit, text width= 5cm, xshift=4cm] {\textbf{Preferensi Pengunjung}\\ Kognisi, Afektif, Interpretatif, Evaluatif };
+
+	\node (soc) [startstop, below of=fit, text width= 8cm, xshift= 3cm, yshift=-1cm ] {\textbf{Preferensi Ruang}};
+
+
+
+\draw [arrow] (fit) -- (soc);
+\draw [arrow] (pre) -- (soc);
+
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+    \node (waf) [startstop, text width= 3cm] {Waterfront};
+
+    \node (man) [startstop, left of=waf, xshift=-3cm, yshift=-1cm, text width= 4.5cm] {Manfaat Waterfront\\ 1. Sosial \\ 2. Rekreasi \\ 3. Transportasi \\ 4. Penggunaan Industri \\ 5. Persimpangan };
+
+    \node (keb) [startstop, below of=waf, text width= 3cm] {Kebutuhan Masyarakat};
+
+    \node (rup) [startstop, below of=keb, xshift=-3cm, text width= 3cm] {Ruang publik};
+
+    \node (att) [startstop, below of=rup, text width= 4cm] {\textbf{Atribut Ruang}\\\small(aksesibilitas,fasilitas,estetika,keamanan, dan pemeliharaan)};
+
+    \node (jun) [startstop, below of=keb, xshift=3cm, text width= 3cm] {Pengunjung};
+
+    \node (kar) [startstop, below of=jun, text width= 5cm] {\textbf{Karakter Pengunjung}\\\small(umur,gender,ras dan status kegiatan ekonomi)};
+
+    \node (pre) [startstop, below of=att, xshift=3cm, yshift=-1cm, text width= 4cm] {\bfseries Preferensi pengunjung terhadap ruang publik};
+
+\draw [arrow] (waf) -- (man);
+\draw [arrow] (waf) -- (keb);
+\draw [latex'-latex'] (man) -- (keb);
+\draw [arrow] (keb) -- (rup);
+\draw [arrow] (rup) -- (att);
+\draw [arrow] (keb) -- (jun);
+\draw [arrow] (jun) -- (kar);
+
+\draw [latex'-latex'] (att) -- (kar);
+
+\draw [arrow] (att) -- (pre);
+\draw [arrow] (kar) -- (pre);
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\end{figure}
+
+%%%----------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[node distance=2cm]

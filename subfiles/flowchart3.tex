@@ -1,0 +1,119 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+
+\begin{figure}[hp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\node (ltr) [startstop] {Latar belakang};
+
+\node (rum) [startstop, right of=ltr, xshift=2cm] {Perumusan masalah};
+
+\node (tuj) [startstop, below of=rum, yshift=0.5cm] {Tujuan penelitian};
+
+\node (pus) [startstop, below of=tuj, yshift=0.5cm] {Studi Pustaka};
+
+\node (kaj) [startstop, below of=pus, text width=4cm, xshift= -4cm, yshift=-.2cm] {
+	\textbf{Kajian Teori}\\ - Ruang publik waterfront\\ - Preferensi ruang\\ - Atribut ruang
+};
+
+
+\node (kaj2) [startstop, below of=pus, text width=3.5cm, xshift= 4cm, yshift=-.2cm] {
+	\textbf{Gambaran Objek}\\  Kondisi ruang A dan B tepi Laut Senggol Parepare berdasarkan atribut ruang
+};
+
+\node (met) [startstop, below of=pus, yshift=-5cm, text width=7cm] {
+	\textbf{Metode Peneltian}.\\
+Penelitian ini bersifat eksploratif untuk menelusuri atribut yang ada yang terkait preferensi pengunjung terhadap tepi laut. Pendekatan \textit{Grounded theory} digunakan untuk memahami objek penelitian dengan pengguna (pengunjung).
+
+	Sumber data: Observasi dan kuesioner survei dengan metodologi campuran.
+};
+
+\node (ana) [startstop, below of=met, yshift=-2cm, text width=8cm ] {
+		\textbf{Analisis data}
+
+         };
+
+\node (tem) [startstop, below of=ana] {\textbf{Temuan Penelitian}};
+
+\node (kes) [startstop, below of=tem, yshift=.6cm, text width=6cm] {Kesimpulan, keterbatasan dan rekomendasi};
+
+\draw [arrow] (ltr) -- (rum);
+\draw [arrow] (rum) -- (tuj);
+\draw [arrow] (tuj) -- (pus);
+
+\draw [arrow] (pus) -| (kaj);
+\draw [arrow] (pus) -| (kaj2);
+
+\draw [doublearrow] (kaj) -- (kaj2);
+
+\draw [arrow] (kaj) |- (met);
+
+\draw [arrow] (kaj2) |- (met);
+
+\draw [arrow] (met) -- (ana);
+\draw [arrow] (ana) -- (tem);
+
+\draw [arrow] (tem) -- (kes);
+
+\end{tikzpicture}
+\caption{Kerangka Pemikiran}
+\label{fig:pik}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+
+    \node (fit) [startstop, text width=\textwidth] {\textbf{Permalahan penelitian}\\ 1. Bagaimana preferensi pengunjung terhadap ruang di ruang­ruang tepi laut?  \\ 2. Bagaimana hubungan keseluruhan elemen dan preferensi ruang? };
+
+	\node (soc) [startstop, below of=fit, text width=\textwidth, yshift=-1cm] {\textbf{Tujuan penelitian}\\ 1.Untuk mengetahui jenis ruang yang paling dicenderungi di kawasan tepi laut.
+    \\ 2. Untuk menganalisis pola preferensi pengunjung terhadap keseluruhan elemen ruang. };
+
+	\node (met) [startstop, below of=soc, text width=\textwidth, yshift=-1cm] {\textbf{Metode penelitian}\\ Penelitian eksploratif yang menggunakan kuesioner survei \textit{mixed-methodology} dan pendekatan \textit{grounded theory}. Teori dari hasil pendekatan tersebut tergabung dalam eksplorasi.};
+
+    \node (pro) [startstop, below of=met, text width=\textwidth, yshift=-1cm] {\textbf{Proposisi}\\ Penyusunan proposisi penelitian berdasarkan tinjauan teory terkait yang disesuaikan dengan objek dan tujuan penelitian untuk dijadikan pedoman dalam pengumpulan dan analisis data.
+    };
+
+    \node (ker) [startstop, below of=pro, text width=8cm, yshift=-.5cm] {\textbf{Kerangka indikator penelitian}\\ Waterfront    };
+
+    \node (keb) [startstop, below of=ker, text width=6cm, yshift=.5cm] {Kebutuhan masyarakat};
+
+    \node (rup) [startstop, below of=keb, xshift=-3cm, text width= 3cm] {Ruang publik};
+
+    \node (att) [startstop, below of=rup, text width= 4cm] {\textbf{Elemen}\\\small(laut, pohon, kedai, toilet, dll)};
+
+    \node (jun) [startstop, below of=keb, xshift=3cm, text width= 3cm] {Pengunjung};
+
+    \node (kar) [startstop, below of=jun, text width= 5cm] {\textbf{Karakter Pengunjung}\\\small(umur,gender,ras dan status kegiatan ekonomi)};
+
+    \node (pre) [startstop, below of=att, xshift=3cm, yshift=-1cm, text width= 4cm] {\bfseries Preferensi pengunjung terhadap ruang publik};
+
+
+
+
+\draw [arrow] (fit) -- (soc);
+\draw [arrow] (soc) -- (met);
+\draw [arrow] (met) -- (pro);
+\draw [arrow] (pro) -- (ker);
+\draw [arrow] (keb) -- (rup);
+\draw [arrow] (rup) -- (att);
+\draw [arrow] (keb) -- (jun);
+\draw [arrow] (jun) -- (kar);
+
+\draw [latex'-latex'] (att) -- (kar);
+
+\draw [arrow] (att) -- (pre);
+\draw [arrow] (kar) -- (pre);
+
+
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\end{figure}
+
+%\onlyinsubfile{\biblio}
+\end{document}
