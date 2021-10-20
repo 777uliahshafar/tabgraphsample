@@ -1,0 +1,37 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+
+\begin{figure}[hp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+
+\node (man) [startstop, text width=6cm] {\textbf{Manusia} \\ 1. Harapan \quad 5 Pendidikan\\ 2. Pengalaman \quad 6. Budaya\\ 3.Konteks sosial \quad 7. Motivasi \\ 4. Informasi \quad 8. Personaliti};
+
+\node (lan) [startstop, right of=man, text width=6cm, xshift=4.5cm] {
+	\textbf{Lanskap}\\ 1. Elemen fisik  2. Kontruksi komposisi  3. Konteks lokasi  4. Kealamian  5. Fitur buatan  6. Suara  7. Bau  8. Orang  9. Gestalt};
+
+\node (int) [startstop, below of=man, text width=12cm, xshift=3cm, yshift=-2cm] {
+		\textbf{Interaksi} \\ 1. Orang-orang-lanskap 2. orang-kelompok-lanskap 3. orang-lanskap 4. aktif 5. pasif 6. Sengaja 7. Kebetulan 8. Unik 9. Biasa
+
+         };
+
+\node (out) [startstop, below of=int, text width = 12cm, yshift=-2cm] {\textbf{Akibat} \\ 1. Informasi 2. Kepuasan 3. Kesejahteraan 4. Aktifitas fisik 5. Stimulasi 6. Tempat berlindung 7. Kesempatan 8. Nilai 9. Persamaan prediktif 10. Elemen lanskap yang menonjol 11. Perilaku kebiasaan 12. Ketakutan};
+
+
+\draw [doublearrow] (man) -- (int);
+
+\draw [doublearrow] (lan) -- (int);
+
+\draw [doublearrow] (int) -- (out);
+
+\end{tikzpicture}
+\caption{Kerangka Pemikiran}
+\label{fig:pik}
+\end{figure}
+
+
+%\onlyinsubfile{\biblio}
+\end{document}
