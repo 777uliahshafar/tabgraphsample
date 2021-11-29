@@ -1,6 +1,7 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
+\begin{comment}
 
 
 \begin{figure}[hp]
@@ -30,6 +31,63 @@
 \end{tikzpicture}
 \caption{Kerangka Pemikiran}
 \label{fig:pik}
+\end{figure}
+
+\end{comment}
+
+\begin{figure}[htbp]
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
+
+    \node (fit) [startstop, text width=.89\textwidth] {\textbf{Permalahan penelitian}\\ 1. Apa saja ruang yang dicenderungi pengunjung terhadap ruang publik?  \\ 2. Mengapa orang memiliki preferensi pada ruang tersebut? \\ 3. Apa saja elemen-elemen pada suatu ruang sehingga orang memilih ruang tersebut? };
+
+	\node (soc) [startstop, below of=fit, text width=.89\textwidth, yshift=-2cm] {\textbf{Tujuan penelitian}\\
+    1.  Untuk menganalisis ruang yang cenderung menjadi preferensi pengunjung terhadap ruang A dan B.\\
+    2.  Untuk menganalisis mengapa orang memiliki preferensi ruang tersebut.\\
+    3.  Untuk menganalisis elemen-elemen apa pada ruang yang menjadi preferensi.\\
+
+        };
+
+	\node (met) [startstop, below of=soc, text width=.89\textwidth, yshift=-1.5cm] {\textbf{Metode penelitian}\\ Pendekatan penilitian metode campuran dengan  menggunakan kuesioner survei \textit{mixed-methodology}};
+
+    \node (pro) [startstop, below of=met, text width=.89\textwidth, yshift=-1cm] {\textbf{Proposisi}\\ Penyusunan proposisi penelitian berdasarkan tinjauan teori terkait yang disesuaikan dengan objek dan tujuan penelitian untuk dijadikan pedoman dalam pengumpulan dan analisis data.
+    };
+
+    \node (ker) [startstop, below of=pro,  yshift=-.8cm, text width=6cm] {\textbf{Kerangka indikator penelitian}    };
+
+    \node (ask) [startstop, below of=ker, xshift=-2.2cm, yshift=-.8cm, text width= 6.2cm] {\textbf{ASPEK RUANG}\\
+
+\begin{tabular}{p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Aksesibilitas & \tabitem Keamanan \\
+    \tabitem Estetika & \tabitem Fasilitas\\
+\end{tabular}};
+
+    \node (elm) [startstop, below of=ask, yshift= -3cm, text width= 6.2cm] {\textbf{ELEMEN RUANG}
+
+\begin{tabular}{p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Pohon yang banyak & \tabitem Jenis kursi \\
+    \tabitem Pohon yang cukup rindang & \tabitem Bunga yang berwarna\\
+    \tabitem Pohon yang sangat rindang & \tabitem Jalan yang lebar\\
+    \tabitem Tatanan dimana orang agak jauh & \tabitem Kehadiran elemen \\
+\end{tabular}};
+
+
+    \node (jun) [startstop, below of=ker, xshift=4cm, yshift= -2.4cm, text width= 5cm] {Menghasilkan temuan preferensi pada ruang publik tepi laut};
+
+\draw [arrow] (fit) -- (soc);
+\draw [arrow] (soc) -- (met);
+\draw [arrow] (met) -- (pro);
+\draw [arrow] (pro) -- (ker);
+
+\draw [doublearrow] (ask) -- (elm);
+
+\draw [arrow] (ask) -| (jun);
+\draw [arrow] (elm) -| (jun);
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\label{fig:conc}
 \end{figure}
 
 
