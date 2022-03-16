@@ -3,6 +3,7 @@
 \begin{document}
 
 
+\begin{comment}
 \begin{figure}[hp]
 \centering
 \begin{tikzpicture}[node distance=2cm]
@@ -114,6 +115,198 @@ Penelitian ini bersifat eksploratif untuk menelusuri atribut yang ada yang terka
 \end{tikzpicture}
 \caption{Kerangka Konseptual}
 \end{figure}
+
+
+\begin{figure}[htbp]
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
+
+    \node (fit) [startstop, text width=.83\textwidth] {\textbf{Permasalahan penelitian}\\ 1. Ruang apa yang dipilih pengunjung untuk dimanfaatkan sebagai ruang publik?  \\ 2. Mengapa orang memiliki preferensi pada ruang tersebut? \\ 3. Apa saja elemen-elemen yang ada pada ruang publik sehingga pengunjung lebih memilih ruang tersebut? };
+
+	\node (soc) [startstop, below of=fit, text width=.83\textwidth, yshift=-2.3cm] {\textbf{Tujuan penelitian}\\
+    1.  Untuk menganalisis kecenderungan pengunjung dalam memilih ruang dikawasan tepi laut Senggol.\\
+    2.  Untuk menganalisis latar belakang yang mendasari pemilihan tersebut.\\
+    3.  Untuk menganalisis apa saja elemen ruang publik yang disukai.\\
+
+        };
+
+	\node (met) [startstop, below of=soc, text width=.83\textwidth, yshift=-1.6cm] {\textbf{Metode penelitian}\\ Pendekatan penilitian menggunakan metode kualitatif dan kuatitatif};
+
+    \node (pro) [startstop, below of=met, text width=.83\textwidth, yshift=-1cm] {\textbf{Proposisi}\\ Penyusunan proposisi penelitian berdasarkan tinjauan teori terkait yang disesuaikan dengan objek dan tujuan penelitian untuk dijadikan pedoman dalam pengumpulan dan analisis data.
+    };
+
+    \node (ker) [startstop, below of=pro,  yshift=-.8cm, text width=6cm] {\textbf{Kerangka indikator penelitian}    };
+
+    \node (ask) [startstop, below of=ker, xshift=-2.4cm, yshift=-.6cm, text width= 6.2cm] {\textbf{ASPEK RUANG}\\
+
+\begin{tabular}{p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Aksesibilitas & \tabitem Estetika \\
+    \tabitem Keamanan & \tabitem Fasilitas\\
+\end{tabular}};
+
+    \node (elm) [startstop, below of=ask, yshift= -3cm, text width= 6.2cm] {\textbf{ELEMEN RUANG}
+
+            \begin{tabular}{@{}p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Jumlah pohon & \tabitem Warna bunga \\
+    \tabitem Bentuk pohon & \tabitem Jenis kursi\\
+    \tabitem Lebar jalan & \tabitem Pencahayaan jalan\\
+    \tabitem Permukaan jalan & \\
+\end{tabular}};
+
+
+    \node (jun) [startstop, below of=ker, xshift=3.6cm, yshift= -2.4cm, text width= 4.5cm] {Menghasilkan temuan preferensi pada ruang publik tepi laut};
+
+\draw [arrow] (fit) -- (soc);
+\draw [arrow] (soc) -- (met);
+\draw [arrow] (met) -- (pro);
+\draw [arrow] (pro) -- (ker);
+
+\draw [doublearrow] (ask) -- (elm);
+
+\draw [arrow] (ask) -| (jun);
+\draw [arrow] (elm) -| (jun);
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\label{fig:conc}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
+
+    \node (fit) [startstop, text width=.83\textwidth] {\textbf{Ruang terbuka publik}\\ adalah ruang yang berperan untuk memberi alur pergerakan yang baik, bertindak sebagai tempat berkumpul dan wadah kegiatan.};
+
+	\node (soc) [startstop, below of=fit, text width=.83\textwidth, yshift=-1.4cm] {\textbf{Tepi laut}\\ adalah kawasan dinamis yang berbatasan dengan air yang memiliki kontak fisik dan visual dengan laut, sungai, danau, dan lain-lain.
+        };
+
+	\node (rrt) [startstop, below of=soc, text width=.83\textwidth, yshift=-1.4cm] {\textbf{Jenis ruang tepi laut}\\
+
+            \begin{tabular}{@{}p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Ruang rekreasi & \tabitem Ruang komersial \\
+    \tabitem Ruang Alamiah & \tabitem Ruang Perumahan\\
+    \tabitem Ruang Kerja &  \\
+\end{tabular}};
+	\node (met) [startstop, below of=rrt, text width=.83\textwidth, yshift=-1.4cm] {\textbf{Preferensi ruang}\\ adalah kecenderungan dalam memilih sesutu yang lebih disukai daripada yang lain};
+
+ \draw[thick,dashed] (-6, -15.5) rectangle (6, -8.5);
+  \path
+    (5, -14.8) node(rec)[below left] {Proposisi ini sebagai alat analisis untuk dilapangan}
+  ;
+
+    \node (ask) [startstop, below of=met, xshift=-3cm, yshift=-3cm, text width= 5.2cm] {\textbf{Aspek ruang yang mempengaruhi preferensi}\\
+
+\begin{tabular}{p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Aksesibilitas & \tabitem Estetika \\
+    \tabitem Keamanan & \tabitem Fasilitas\\
+\end{tabular}};
+
+    \node (elm) [startstop, below of=met, xshift=3cm, yshift= -3.3cm, text width= 5.2cm] {\textbf{Elemen ruang yang mempengaruhi preferensi berdasarkan aspek}
+
+            \begin{tabular}{@{}p{.4\textwidth}@{}p{.4\textwidth}}
+    \tabitem Jumlah pohon & \tabitem Warna bunga \\
+    \tabitem Bentuk pohon & \tabitem Jenis kursi\\
+    \tabitem Lebar jalan & \tabitem Pencahayaan jalan\\
+    \tabitem Permukaan jalan & \\
+\end{tabular}};
+
+
+    \node (jun) [startstop, below of=ask, xshift=3.6cm, yshift= -4.2cm, text width= 4.5cm] {\textbf{Tepi laut Senggol}\\ Ruang A dan Ruang B};
+
+    \node (tem) [startstop, below of=jun, yshift= -1cm, text width= 4.5cm] {Menghasilkan temuan preferensi pada ruang publik tepi laut};
+\draw [arrow] (fit) -- (soc);
+\draw [arrow] (soc) -- (rrt);
+
+\draw [arrow] (rrt) -- (met);
+
+\draw [arrow] (met) -- (ask);
+\draw [arrow] (met) -- (elm);
+
+\draw [doublearrow] (ask) -- (elm);
+
+\draw [arrow] (ask) -- (rec);
+\draw [arrow] (elm) -- (rec);
+\draw [arrow] (rec) -- (jun);
+\draw [arrow] (jun) -- (tem);
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\label{fig:conc}
+\end{figure}
+
+\end{comment}
+
+\begin{figure}[hp]
+\centering
+\begin{tikzpicture}[node distance=1.4cm]
+\node (ltr) [startstop] {Latar belakang};
+
+\node (rum) [startstop, right of=ltr, xshift=2.8cm] {Perumusan masalah};
+
+\node (tuj) [startstop, below of=rum] {Tujuan penelitian};
+
+\node (pus) [startstop, below of=tuj] {Studi Pustaka};
+
+\node (kaj) [startstop, below of=pus, text width=4cm, xshift= -4cm, yshift=-1cm] {
+	\textbf{Kajian Teori}\\ - Ruang publik waterfront \\ - Jenis Ruang\\ - Aspek dan Elemen ruang
+};
+
+
+\node (kaj2) [startstop, below of=pus, text width=3.5cm, xshift= 4cm, yshift=-1cm] {
+	\textbf{Gambaran Objek}\\  Kondisi ruang A dan B tepi Laut Senggol Parepare.
+};
+
+\node (met) [startstop, below of=pus, yshift=-6cm, text width=7cm] {
+	\textbf{Metode Peneltian}.\\
+Pendekatan penelitian ini adalah kualitatif dan kuantitatif untuk menganalisis kecenderungan pengunjung dalam memilih ruang, mengetahui latar belakang yang mendasari pemilihan tersebut, dan menganalisis apa saja elemen ruang publik yang disukai.
+% tidak perlu menggunakan istilah asing sperti grounded theory dll.
+% 11:15
+%Pendekatan \textit{Grounded theory} digunakan untuk memahami objek penelitian dengan pengguna (pengunjung).
+
+	Sumber data: Observasi dan kuesioner survei dengan metodologi campuran.
+};
+
+\node (pro) [startstop, below of=met, yshift=-3.4cm, text width=8cm ] {
+		\textbf{Proposisi}\\ Penyusunan proposisi penelitian berdasarkan tinjauan pustaka disesuaikan dengan objek dan tujuan penelitian untuk dijadikan pedoman dalam pengumpulan data dan analisis.
+         };
+
+\node (ana) [startstop, below of=pro, yshift=-1.4cm,  text width=8cm ] {
+		\textbf{Analisis data}\\ Analisis menggunakan crosstab dan multivariate-biplot.
+         };
+
+\node (tem) [startstop, below of=ana, yshift=-.4cm] {\textbf{Temuan Penelitian}};
+
+\node (kes) [startstop, below of=tem, text width=6cm] {Kesimpulan dan rekomendasi};
+
+\draw [arrow] (ltr) -- (rum);
+\draw [arrow] (rum) -- (tuj);
+\draw [arrow] (tuj) -- (pus);
+
+\draw [arrow] (pus) -| (kaj);
+\draw [arrow] (pus) -| (kaj2);
+
+\draw [doublearrow] (kaj) -- (kaj2);
+
+\draw [arrow] (kaj) |- (met);
+
+\draw [arrow] (kaj2) |- (met);
+
+\draw [arrow] (met) -- (pro);
+\draw [arrow] (pro) -- (ana);
+\draw [arrow] (ana) -- (tem);
+
+\draw [arrow] (tem) -- (kes);
+
+\end{tikzpicture}
+\caption{Kerangka Pemikiran}
+\label{fig:pik}
+\end{figure}
+
+
+
 
 %\onlyinsubfile{\biblio}
 \end{document}
