@@ -51,6 +51,7 @@
 \usepackage{multirow}
 
 \usepackage{paralist} %Inline list(inparaenum), always on top of enumitem
+\usepackage{lscape}
 \usepackage{longtable} % Enable table cross multiple page
 \usepackage{array} %Mostly formatting columns and spacing
 \usepackage{diagbox} % Diagonal line on table
@@ -59,6 +60,8 @@
 
 \setlist{noitemsep} % No spacing between list items
 \setlist[itemize]{label=\textbullet, nosep, topsep=0pt, partopsep=0pt, parsep=0pt} % No spacing between itemize
+
+\newcommand{\tabitems}{~~\llap{\textbullet}~~}
 
 % Remove spacing between itemize env. inside table env. this corespond with longtable.tex
 \makeatletter
@@ -87,10 +90,10 @@
 
 %\subfile{subfiles/flowchart1.tex}
 %\clearpage
-%\subfile{subfiles/flowchart2.tex}
+\subfile{subfiles/flowchart2.tex}
 %\clearpage
 %\subfile{subfiles/flowchart3.tex}
-\subfile{subfiles/flowchart4.tex}
+%\subfile{subfiles/flowchart4.tex}
 \clearpage
 %\subfile{subfiles/longtable.tex}
 %\subfile{subfiles/piechart.tex}
