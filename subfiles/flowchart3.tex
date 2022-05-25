@@ -2,6 +2,7 @@
 
 \begin{document}
 
+\begin{comment}
 
 \begin{figure}[hp]
 \centering
@@ -114,6 +115,131 @@ Penelitian ini bersifat eksploratif untuk menelusuri atribut yang ada yang terka
 \end{tikzpicture}
 \caption{Kerangka Konseptual}
 \end{figure}
+\end{comment}
+%%
+
+
+\begin{figure}[htbp]
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
+
+    \node (fit) [startstop, text width=2.5cm, xshift=-6cm] {\textbf{Preferensi terhadap ruang}};
+
+	\node (soc) [startstop, right of=fit, text width=2.5cm, xshift=7cm] {\textbf{Ruang publik tepi laut}};
+
+	\node (rrt) [startstop, below of=fit, text width=2.5cm, yshift=-3.5cm] {\textbf{Pelaku}\\
+
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Gender  \\
+    \tabitem Usia \\
+    \tabitem Suku \\
+    \tabitem Pendidikan \\
+\end{tabular}};
+
+	\node (met) [startstop, right of=rrt, text width=2.5cm, xshift=2.5cm] {\textbf{Aspek ruang}
+
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Aksesibilitas  \\
+    \tabitem Keamanan \\
+    \tabitem Estetika \\
+    \tabitem Fasilitas \\
+\end{tabular}};
+
+
+	\node (ele) [startstop, right of=rrt, text width=4cm, xshift=7cm] {\textbf{Elemen ruang}
+
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Jumlah pohon  \\
+    \tabitem Bentuk pohon \\
+    \tabitem Lebar jalan \\
+    \tabitem Permukaan jalan \\
+    \tabitem Warna bunga \\
+    \tabitem Jenis kursi \\
+    \tabitem Tingkat cahaya \\
+    \tabitem Orientasi elemen \\
+    \tabitem Tempat wisata air \\
+    \tabitem Bgnan penunjang \\
+    \tabitem Elemen air \\
+\end{tabular}};
+
+
+ \draw[thick,dashed] (-7.8, -20) rectangle (4.4, -7.8);
+
+
+
+    \node (elm) [below of=met, yshift= -8.2cm, text width= .8\textwidth] {\centering\textbf{Variabel Penelitian}
+
+            \begin{longtable}{@{}p{.33\textwidth}@{}p{.33\textwidth}@{}p{.43\textwidth}}
+Aksesibilitas & Lebar jalan & Jalan pedestrian yang aksesibel memperhatikan lebar jalan \\
+ & Permukaan jalan & Permukaan terlibat dalam laju dan pilihan rute pejalan kaki\\
+Keamanan & Bentuk pohon & Bentuk pohon tertentu memberikan rasa aman\\
+ & Pencahayaan jalan & Pencahayaan mendorong penggunaan ruang publik 24 jam dan meningkatkan rasa aman individu\\
+Estetika & Jumlah pohon& Jumlah pohon tertentu meningkatkan kenikmatan estetika\\
+ & Bunga yang berwarna & Bunga pada desain lanskap memberikan ketertarikan visual\\
+ & Elemen air & Elemen air merupakan atraksi yang menarik pada ruang publik tepi laut\\
+
+
+\end{longtable}
+    };
+
+\draw [white,-{Stealth}] (fit) -- (soc) node(xu) [midway] {};
+\draw [-{Stealth[length=3mm,width=2mm]}] (fit) -- (-2,0);
+\draw [{Stealth[length=3mm,width=2mm]}-] (-2,0) -- (soc);
+\draw [arrow] (fit) -- (rrt);
+
+\draw [arrow] (soc) -- (ele);
+
+\draw [white,-{Stealth}] (met) -- (ele) node(yu) [midway] {};
+\draw [{Rays[n=6,scale=4]}-{Stealth[scale=2]}] (yu) -- (-.57,-7.6);
+
+\draw [arrow] (rrt) -- (met);
+
+\draw [arrow] (met) -- (ele);
+
+
+
+\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[htbp]
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
+
+ \draw[thick,dashed] (-5.8, 12) rectangle (6.5, 26);
+    \node (elm) [below of=met, yshift=25cm, xshift=1.98cm, text width= .8\textwidth] {\centering\textbf{Variabel Penelitian}
+
+            \begin{longtable}{@{}p{.33\textwidth}@{}p{.33\textwidth}@{}p{.43\textwidth}}
+
+Fasilitas & Bentuk pohon& Bentuk pohon tertentu memfasilitasi aktivitas fisik dan interaksi sosial\\
+ & Jenis kursi & Kursi yang beranekaragam akan menciptakan beragam penggunaan. Beberapa diantara seperti bersosialisasi, melihat-lihat dan bersantai \\
+ & Lebar jalan & Lebar jalan tertentu dapat memfasilitasi mobilitas, interaksi sosial, dan kenyamanan\\
+ & Orientasi elemen & Orientasi elemen memfasilitasi pengunjung untuk melihat panorama dan pemandangan.  \\
+ & Tempat wisata laut & Tempat ini merupakan area dimana orang dapat berinteraksi dengan air\\
+ & Bangunan penunjang & Bangunan penunjang merupakan bangunan yang dapat mengakomodasi kegiatan-kegiatan pengunjung. \\
+\end{longtable}
+    };
+
+  \path
+    (3.8, 12.5) node(rec)[below left] {Variabel ini sebagai alat analisis untuk dilapangan}
+  ;
+
+
+    \node (jun) [startstop, below of=rec, yshift= -1cm, text width= 4.5cm] {\textbf{Tepi laut Senggol}\\ Ruang A dan Ruang B};
+
+    \node (tem) [startstop, below of=jun, yshift= -.8cm, text width= 4.5cm] {Menghasilkan temuan preferensi pada ruang publik tepi laut};
+
+\draw [arrow] (rec) -- (jun);
+\draw [arrow] (elm) -- (rec);
+\draw [arrow] (jun) -- (tem);
+
+\end{tikzpicture}
+\caption{Kerangka Konseptual}
+\label{fig:conc2}
+\end{figure}
+
+
 
 %\onlyinsubfile{\biblio}
 \end{document}

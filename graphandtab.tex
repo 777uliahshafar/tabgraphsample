@@ -19,14 +19,31 @@
 	headheight=0.75cm, % Header height
 	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
 	headsep=0.75cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
+	showframe, % Uncomment to show how the type block is set on the page
 }
 \usepackage{subfiles}
+\usepackage[table]{xcolor}
+
+\definecolor{White}{rgb}{255,255,255}
+\definecolor{gray}{gray}{0.98}
+\definecolor{dgray}{gray}{0.58}
+\def\ccg{\cellcolor{dgray}}
+
+
+\def\cca#1{%
+\ifdim#1pt<15pt\cellcolor{green!90}\ifnum#1<15\color{green!90}\fi\else
+\ifdim#1pt<30pt\cellcolor{yellow!90}\ifnum#1<30\color{yellow!90}\fi\else
+\cellcolor{red!90}\color{red!90}\fi\fi
+#1}
+
+
 \usepackage{comment}
 %----------------------------------------------------------------------------------------
 % CONFIGURATION OF Tikz
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows}
+\usetikzlibrary{shapes.geometric, arrows,arrows.meta}
+\pgfarrowsdeclarecombine{twotriang}{twotriang}%
+{Rays}{}{Stealth}{Stealth}
 
 \def\checkmark{\tikz\fill[scale=0.5](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 
@@ -50,12 +67,26 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{multirow}
 
+\usepackage{dcolumn} % pretty column descr R crosstab2tex
+\newcolumntype{d}{D{.}{.}{-1}} % this will add extra space for decimal numeric on the right, this will remove it D{.}{.}{0}
+
+%change font percentage symbol
+\newcommand*\pct{\mbox{%
+    \fontencoding{\encodingdefault}%
+    \fontfamily{cmr}%
+    \selectfont
+    \symbol{`\%}%
+  }%
+  }
+\newcommand*\pc{{\scalebox{.9}{\pct}}}
+
 \usepackage{paralist} %Inline list(inparaenum), always on top of enumitem
 \usepackage{lscape}
 \usepackage{longtable} % Enable table cross multiple page
 \usepackage{array} %Mostly formatting columns and spacing
 \usepackage{diagbox} % Diagonal line on table
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} %centering elemen in table
+\newcolumntype{R}[1]{>{\columncolor{gray}}p{#1}} %centering elemen in table
 \usepackage{enumitem} % Required for list customisation
 
 \setlist{noitemsep} % No spacing between list items
@@ -92,11 +123,11 @@
 %\clearpage
 \subfile{subfiles/flowchart2.tex}
 %\clearpage
-%\subfile{subfiles/flowchart3.tex}
+\subfile{subfiles/flowchart3.tex}
 %\subfile{subfiles/flowchart4.tex}
 \clearpage
 %\subfile{subfiles/longtable.tex}
 %\subfile{subfiles/piechart.tex}
 
-\subfile{subfiles/diagtab.tex}
+%\subfile{subfiles/diagtab.tex}
 \end{document}
