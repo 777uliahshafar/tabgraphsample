@@ -1,0 +1,50 @@
+\documentclass[a4paper]{timeline}
+
+\begin{document}
+\setlength\tabcolsep{1pt}
+\begin{table}
+	\caption{Rencana Linimasa Penelitian}
+	\label{minetimeline}
+	\begin{tabular}{|c|p{120pt}|*{\NumMonths}{c|}} \hline
+		\multirow{2}{*}{\#}  &  \multirow{2}{*}{Tasks} \YearHeadRow  \\
+		\YearMonthSep{2}
+		                     &  \MonthHeadRow  \\ \hline
+		%%%%%%%%%%%%
+		\NewGroup
+		\NewBlock{blue}{1}{\NumMonths}
+		\Task{Studi pustaka}
+		%%%%%%   1  %%%%%%%
+		\NewGroup
+		\NewBlock{yellow}{1}{1}
+		\Task{Metodologi penelitian}
+		\NewBlock{yellow}{2}{2}
+		\Task{Karakter-karakter ruang publik pesisir}
+		\NewGroup
+		\NewBlock{red}{3}{4}
+		\Task{Seminar hasil}
+		\NewGroup
+		\NewBlock{green}{5}{7}
+		\Task{Revisi proposal penelitian}
+		%%%%%%   6   %%%%%%% 4
+		\NewGroup
+		\NewBlock{gray}{5}{10}
+		\Task{Studi awal}
+		\NewBlock{gray}{11}{13}
+		\Task{Data susulan}
+		%%%%%%   10    %%%%%%% 5
+		\NewGroup
+		\NewBlock{orange}{11}{17}
+		\Task{Analisis statistik}
+		\NewGroup
+		\NewBlock{blue}{18}{25}
+		\Task{Menulis naskah pembahasan}
+		%      \Row{Publication 01}
+		%      \Row{Publication 02}
+		%      \Row{Publication 03}
+		%      \Row{Publication 04}
+		\NewGroup
+		\NewBlock{red}{26}{28}
+		\Task{Ujian Disertasi}
+	\end{tabular}
+\end{table}
+\end{document}
