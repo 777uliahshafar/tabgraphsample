@@ -29,7 +29,7 @@
 
 
 % \usepackage[square, numbers, comma, sort & compress]{natbib}
-\usepackage[table]{xcolor}
+\usepackage[table]{xcolor} %put in the top (prior line 16)
 \usepackage{multirow}
 \usepackage{rotating}
 
