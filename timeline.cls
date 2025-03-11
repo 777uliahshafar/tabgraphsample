@@ -33,10 +33,10 @@
 \usepackage{multirow}
 \usepackage{rotating}
 
-\newcommand*\MonthLetters{SONDJFMAMJJA}
-\newcommand*\NumMonths{28}
-\newcommand*\YearMonths{4,12,12,}
-\newcommand*\FirstYear{2024}
+\newcommand*\MonthLetters{AMJJASOND}
+\newcommand*\NumMonths{9}
+\newcommand*\YearMonths{9}
+\newcommand*\FirstYear{2025}
 
 
 % Put this upside tikz package if there any

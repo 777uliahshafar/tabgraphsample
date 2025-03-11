@@ -1,0 +1,131 @@
+%! TEX root = multirow.tex
+% the main TeX file which is intended to compile, :VimtexReload after adjustment
+   % this file should be included in the main file
+% :h vimtex-tex-root
+\documentclass[../main.tex]{subfiles}
+%ensure the class of docs
+
+\begin{document}
+
+\begin{table}[!ht]
+	\centering
+    \begin{tabularx}{.95\textwidth}{p{.5em}>{\raggedright\arraybackslash}p{7em}>{\raggedright\arraybackslash}p{7em}p{3em}cp{5.5em}}
+        \toprule
+
+        \multirow{2}{*}{No}  &  \multicolumn{4}{c}{Jenis Luaran}                                       &  \begin{minipage}{5em}
+		  Indikator Capaian
+		\end{minipage}  \\
+\cmidrule(lr){2-5}
+                             &  Kategori                                                               &  Sub kategori                             &  Wajib  &  \begin{minipage}{3em}
+		                      Tambahan
+		                     \end{minipage}  &  2025 (TS)  \\
+                             \midrule
+		% hline
+
+		\multirow{3}{*}{1.}  &  \multirow{3}{*}{\begin{minipage}{6em}
+				                                        Artikel ilmiah dimuat di jurnal
+			                                        \end{minipage}}                                  &  International bereputasi                 &         & \cellcolor{lightgray}            &  \\
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Nasional bereputasi                      & \cellcolor{lightgray}        &            &  \\
+
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Nasional tidak  terakreditasi            &         &            &  \\
+                             \midrule
+		% hline 2
+
+		\multirow{2}{*}{2.}  &  \multirow{3}{*}{\begin{minipage}{6em}
+				                                        Artikel ilmiah dimuat di prosiding
+			                                        \end{minipage}}                                  &  International terindex                   &         &            &  \\
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Nasional                                 &         &            &  \\
+
+                             \midrule
+		% hline 3
+
+		\multirow{3}{*}{3.}  &  \multirow{3}{*}{\begin{minipage}{6em}
+				                                        Invited speaker dalam temu ilmiah
+			                                        \end{minipage}}                                  &  International                            &         &            &  \\
+
+\cmidrule(lr){3-6}
+
+                             &                                                                         &  \begin{minipage}{7em}
+		       Nasional               \\
+		                     \end{minipage}                                 &         &            &  \\
+
+\midrule
+		% hline 4
+
+		4.                   &  Visiting lecturer                                                      &  Internasional                            &         &            &  \\
+\midrule
+		% hline 5
+
+		\multirow{5}{*}{3.}  &  \multirow{3}{*}{\begin{minipage}{6em}
+				                                        Hak Kekayaan Intelektual (HKI)
+			                                        \end{minipage}}                                  &  Paten                                    &         &            &  \\
+
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Paten Sederhana                          &         &            &  \\
+
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Hak Cipta                                &         &            &  \\
+
+\cmidrule(lr){3-6}
+		                     &                                                                         &  Merek dangang                            &         &            &  \\
+
+\cmidrule(lr){3-6}
+		                     &                                                                         &  Rahasia dagang                           &         &            &  \\
+
+\cmidrule(lr){3-6}
+		                     &                                                                         &  Desain produk industri                   &         &            &  \\
+
+\cmidrule(lr){3-6}
+		                     &                                                                         &  Indikasi Geografis                       &         &            &  \\
+
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Perlindungan varietas tanaman            &         &            &  \\
+
+\cmidrule(lr){3-6}
+
+		                     &                                                                         &  Perlindungan Topografin Sirkuit terpadu  &         &            &  \\
+\midrule
+		% hline 6
+
+                6.                   &  \multicolumn{2}{l}{\begin{minipage}{14em}
+
+		Teknologi Tepat Guna\end{minipage}}                                                                          &         &            &  \\
+\midrule
+        % hline 7
+
+		7.                   &  \multicolumn{2}{l}{
+            \begin{minipage}{14em}
+    Model/Purwarupa/Desain/Karya Seni/Rekayasa Sosial
+\end{minipage}
+
+        }  &                                                    &            &  \\
+\midrule
+
+		8.                   &  \multicolumn{2}{l}{
+            \begin{minipage}{14em}
+    Bahan Ajar
+\end{minipage}
+        }                                         &                                                    &            &  \\
+\midrule
+
+        9.                   &  \multicolumn{2}{l}{\begin{minipage}{14em}
+		  Tingkat Kesiapan Teknologi (TKT)
+		\end{minipage}}                   &                                                    &            &  \\
+        \bottomrule
+	\end{tabularx}
+\end{table}
+
+
+\bibliographystyle{apalike}
+\bibliography{../filename.bib} % required for citecompletion, not work in mainfile
+\end{document}
+
