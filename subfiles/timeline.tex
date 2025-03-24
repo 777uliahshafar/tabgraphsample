@@ -1,0 +1,43 @@
+%! TEX root = timeline.tex
+% the main TeX file which is intended to compile, :VimtexReload after adjustment
+   % this file should be included in the main file
+% :h vimtex-tex-root
+\documentclass[../graphandtab.tex]{subfiles}
+%ensure the class of docs
+
+\begin{document}
+
+Jadwal penelitian yang telah direpresentasikan dalam dapat dilihat pada Tabel \ref{tab:timeline} berikut.
+
+\begin{table}[!ht]
+	\caption{Jadwal Penelitian}
+	\label{tab:timeline}
+	\centering
+	\begin{tabular}{|p{1.5em}|p{9em}|l|l|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\thead{\multirow{2}{*}{No.}}  &  \thead{\multirow{2}{*}{Nama Kegiatan}}    &  \multicolumn{12}{c|}{\thead{Bulan Ke-}}  \\ \cline{3-14}
+		                              &                                            &  \textbf{1}                               &  \textbf{2}  &  \textbf{3}  &  \textbf{4}           &  \textbf{5}           &  \textbf{6}           &  \textbf{7}           &  \textbf{8}           &  \textbf{9}           &  \textbf{10}          &  \textbf{11}          &  \textbf{12}  \\ \hline
+
+
+
+		1.                            &  Persiapan                                 &                                           &              &              &  \cellcolor{blue!25}  &                       &                       &                       &                       &                       &                       &                       &  \\ \hline
+		2.                            &  Studi Pustaka                             &                                           &              &              &                       &  \cellcolor{blue!25}  &                       &                       &                       &                       &                       &                       &  \\ \hline
+		3.                            &  Pengumpulan data                          &                                           &              &              &                       &                       &  \cellcolor{blue!25}  &                       &                       &                       &                       &                       &  \\ \hline
+		4.                            &  Visualisasi data dengan Aplikasi R        &                                           &              &              &                       &                       &  \cellcolor{blue!25}  &  \cellcolor{blue!25}  &  \cellcolor{blue!25}  &                       &                       &                       &  \\ \hline
+		5.                            &  Analisis Data                             &  \~                                       &  \~          &  ~           &  ~                    &  \~                   &  \~                   &  \cellcolor{blue!25}  &  \cellcolor{blue!25}  &                       &                       &                       &  \\ \hline
+		6.                            &  Penarikan Kesimpulan dan Saran            &  ~                                        &  ~           &  ~           &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  \cellcolor{blue!25}  &  ~                    &  ~                    &  ~  \\ \hline
+		7.                            &  Penyusunan naskah awal artikel Publikasi  &  ~                                        &  ~           &  ~           &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  \cellcolor{blue!25}  &  \cellcolor{blue!25}  &  ~                    &  ~  \\ \hline
+		8.                            &  Publikasi                                 &  ~                                        &  ~           &  ~           &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  \cellcolor{blue!25}  &  ~                    &  ~  \\ \hline
+		9.                            &  Penyusunan Laporan akhir                  &  ~                                        &  ~           &  ~           &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  \cellcolor{blue!25}  &  ~  \\ \hline
+		10.                           &  Monev laporan akhir                       &  ~                                        &  ~           &  ~           &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  ~                    &  \cellcolor{blue!25}  \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
+
+
+% \bibliographystyle{apalike}
+% \bibliography{../filename.bib} % required for citecompletion, not work in mainfile
+\end{document}
+
